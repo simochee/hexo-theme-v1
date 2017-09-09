@@ -1,0 +1,35 @@
+.pagenator
+    card-shadow()
+    background #fff
+    border-radius 2px
+    display flex
+    height 35px
+    padding 2px
+    &--wrapper
+        display flex
+        justify-content center
+    &--page-number
+        box-sizing border-box
+        color #444
+        font-family: 'Roboto', sans-serif
+        font-weight 800
+        line-height 27px
+        text-align center
+        text-decoration none
+        width 30px
+        & + .pagenator--page-number__current
+            margin-left 5px
+        &:not(.pagenator--page-number__current)
+            border-top 4px solid transparent
+            border-bottom 4px solid transparent
+            &:hover
+                border-bottom-color $_theme
+                color $_theme
+        &__current
+            background $_theme
+            border-radius 2px
+            color #fff
+            font-weight 400
+            line-height 35px
+            & + .pagenator--page-number
+                margin-left 5px

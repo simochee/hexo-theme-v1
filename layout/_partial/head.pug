@@ -1,0 +1,11 @@
+head
+    meta(charset="utf-8")
+    -
+        // パターンに応じてtitleを生成
+        var title = page.title
+
+    title #{page.title ? page.title + ' | ' : ''}#{config.title}
+    != css('//fonts.googleapis.com/css?family=Roboto:100,400,700|Source+Code+Pro')
+    != css('//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css')
+    != css('//fonts.googleapis.com/earlyaccess/notosansjapanese.css')
+    != css(_src(['stylesheets/style']))

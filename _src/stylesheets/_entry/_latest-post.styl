@@ -1,0 +1,20 @@
+&--latest-post
+    position relative
+    &::before
+        $offset = 35px
+        $h = 35px
+        $w = 150px
+        background $_theme
+        box-shadow 0 1px 2px 2px darken($_theme, 15%)
+        color #fff
+        content 'Latest'
+        height $h
+        letter-spacing .1em
+        line-height $h
+        position absolute
+        right ($offset - $w / 2)
+        top ($offset - $h / 2)
+        text-align center
+        transform rotate(45deg)
+        transform-origin center center
+        width $w

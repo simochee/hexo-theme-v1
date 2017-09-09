@@ -1,0 +1,28 @@
+.global-nav {
+  border-top: 4px solid #000;
+  height: 60px;
+  width: 100%;
+}
+.global-nav .nav--left {
+  float: left;
+}
+.global-nav .nav--right {
+  float: right;
+}
+.global-nav .nav--menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.global-nav .nav--menu-item {
+  height: 60px;
+  line-height: 60px;
+}
+.global-nav .nav--menu-anchor {
+  display: block;
+}
+.global-nav .nav--menu-anchor:hover {
+  background: #000;
+}
+
+/*# sourceMappingURL=header.css.map */

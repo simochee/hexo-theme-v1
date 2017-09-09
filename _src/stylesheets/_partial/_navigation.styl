@@ -1,0 +1,36 @@
+.global-nav
+    border-top 4px solid  $_theme
+    height 60px
+    position absolute
+    width 100%
+    .nav
+        &--container
+            box-sizing border-box
+            margin 0 auto
+            max-width 1200px
+            padding 0 10px
+        &--left
+            float left
+        &--right
+            float right
+        &--brand
+            color $_site-brand
+            display block
+            font-brand()
+            font-size 24px
+            line-height 60px
+            text-decoration none
+        &--menu
+            display flex
+            &-item
+                height 60px
+                line-height 60px
+            &-anchor
+                color #333
+                display block
+                padding 0 12px
+                text-decoration none
+                transition all .12s $ease-out-cubic
+                &:hover
+                    background $_theme
+                    color #fff

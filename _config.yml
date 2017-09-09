@@ -1,0 +1,23 @@
+# 開発モードフラグ
+isBuildFlag: false
+
+# ヘッダーメニュー
+menu:
+  - title: Home
+    url: /blog/
+  - title: JavaScript
+    url: /blog/categories/javascript/
+  - title: Dialy
+    url:
+  - title: 
+
+# ソーシャルアカウントリスト
+social:
+  - name: Twitter
+    id: simocheeworks
+    url: https://twitter.com/simocheeworks
+    icon: twitter
+
+# ソーシャルアカウント
+google_analytics: 
+twitter: 

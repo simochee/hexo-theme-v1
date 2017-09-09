@@ -1,0 +1,18 @@
+-
+    // JSに渡すページタイプを定義 (UpperCamelCase)
+    var pageType;
+    if (is_home()) pageType = 'Home'
+
+<!DOCTYPE html>
+html
+    != partial('_partial/head')
+    body(data-script=pageType)
+        != partial('_partial/navigation')
+
+        != partial('_partial/main-visual')
+    
+        != body
+    
+        != partial('_partial/footer')
+        
+        != partial('_partial/foot')

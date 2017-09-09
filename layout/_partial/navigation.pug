@@ -1,0 +1,14 @@
+nav.global-nav
+    .nav--container
+        if !is_home()
+            .nav--left
+                a.nav--brand(href=config.root)= config.title
+        .nav--right
+            ul.nav--menu
+                for item in theme.menu
+                    if item.title && item.url
+                        li.nav--menu-item
+                            a.nav--menu-anchor(href=item.url)= item.title
+                for item in theme.social
+                    li.nav--menu-item.nav--menu-social
+                        a.nav--menu-anchor(href=item.url): span(class='iconfont-' + item.icon)
